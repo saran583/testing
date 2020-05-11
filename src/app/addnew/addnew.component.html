@@ -1,0 +1,45 @@
+<br>
+<p align="center" style="color: bisque;">{{result}}</p>
+<div align="center">
+<div class="card">
+<br>
+<br>
+<label >Movie Name</label>
+&nbsp;&nbsp;<input type="text" placeholder="Name of the Movie" [(ngModel)] = "movie">
+<br>
+<br>
+<label >Released in</label>
+&nbsp;&nbsp;<input type="text" placeholder="Year " [(ngModel)] = "year">
+<br>
+<br>
+<label >Drive Link</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="GoogleDrive Link" [(ngModel)] = "dlink">
+<br>
+<br>
+<label >Trailer Link</label>
+&nbsp;&nbsp;<input type="text" placeholder="Trailer Link" [(ngModel)] = "trailer">
+<br>
+<br>
+<button style="width: 120px; height: 50px; margin-top: 10px; background-color: #E8EE37; border: none; font-size: 15px;   font-family: 'Lucida Calligraphy'; border-radius: 25px;" (click)="getmovie()" >Get Movies</button>
+&nbsp;&nbsp;&nbsp;
+<button *ngIf="validate()" style="width: 120px; height: 50px; margin-top: 10px; background-color: #E8EE37; border: none; font-size: 15px;   font-family: 'Lucida Calligraphy'; border-radius: 25px;" (click)="Sendtodb()" >Add Card</button>
+<br>
+<br>
+</div>
+</div>
+<br>
+<div *ngIf ="names.length>0; then logIn; else logIn" > 
+</div > 
+<ng-template #logIn >
+<div *ngFor = "let name of names"> 
+<h1 style="color: bisque;"> {{name.Title}}-{{name.Year}} </h1> 
+<br > 
+<img src = {{name.Poster}} (click)="poster=name.Poster" alt = "image not found in the DB" > 
+<br > 
+<p style="color: bisque;">{{name.Genre}} </p>
+<br> 
+</div> 
+</ng-template >
+{{trailer}}
+
+<ng-template #logOut > {{msg}} </ng-template >

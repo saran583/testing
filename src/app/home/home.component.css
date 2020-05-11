@@ -1,0 +1,39 @@
+body {background-color:#363636;}
+
+
+#makeGird{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 0px;
+  }
+
+  .card {
+    margin-left: 10px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(247, 242, 242, 0.2);
+    max-width: 225px;
+    height:auto;
+    text-align: left;
+    font-family: arial;
+    background-color: black;
+  }  
+
+  .matwrapper{
+    margin-bottom: -1.75em;
+    margin-top: -1.75em;
+  }
+
+  .textinp{
+    width: 400px;
+    height: 50px;
+    font-size:18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }

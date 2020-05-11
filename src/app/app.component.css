@@ -1,0 +1,38 @@
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    background-color: #080808;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  
+   
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+ .button{
+   width: 225px;
+   color: black;
+   height: 79px;
+ }
